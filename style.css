@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;700&family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*FONTS*/
+html{
+    font-size: 16px;
+    hyphens: none;
+}
+
+h1{
+    font-family: 'Righteous', system-ui, cursive;
+    font-size: 2.5rem;
+	line-height: 2.875rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+h2, .dropbtn, .dropdown-content a{
+    font-family: 'Righteous', system-ui, cursive;
+    font-size: 1.5rem;
+	line-height: 1.875rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#copytext, p, a, button, ul, ol{
+    font-family: 'Kanit', system-ui, sans-serif;
+    font-size: 1rem;
+	line-height: 1.375rem;
+    font-weight: 300;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+#bold{
+    font-family: 'Kanit', system-ui, sans-serif;
+    font-size: 1rem;
+	line-height: 1.375rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#footerfont{
+    font-family: 'Kanit', system-ui, sans-serif;
+    font-size: 0.75rem;
+	line-height: 1rem;
+    font-weight: 300;
+}
+
+/*COLORS*/
+#pink{
+    background-color: black;
+}
+#pink h1, #pink .grid h2, #pink ol li:before{ /*Wenn ich dann id=pink in den Body schreibe, wird es auf alles übernommen*/
+    color: #df005e;
+}
+#pink .grid{
+    color: white;
+}
+#pink #bold{
+    color: white;
+}
+#pink #bold:hover{
+    color: #df005e;
+}
+
+#white{
+    background-color: black;
+}
+#white .grid{
+    color: white;
+}
+
+.work{
+    background-color: white; 
+}
+.work .grid{
+    color: black;
+}
+#pink2 .button:hover, #grey .button:hover, #blue .button:hover, #beige .button:hover{
+    background-color: black;
+    color: white;
+}
+
+#pink2 h1, #pink2 .grid h2, #pink2 #bold, #pink2 ol li:before{
+    color: #df005e;
+}
+#pink2 .button{
+    background-color: #df005e;
+    border: #df005e;
+}
+
+#green h1, #green .grid h2, #green #bold{
+    color: #66E38D;
+}
+
+#grey h1, #grey .grid h2, #grey #bold{
+    color: #595959;
+}
+#grey .button{
+    background-color: #595959;
+    border: #595959;
+}
+
+#blue h1, #blue .grid h2, #blue #bold{
+    color: #233C57;
+}
+#blue .button{
+    background-color: #233C57;
+    border: #233C57;
+}
+
+#beige h1, #beige .grid h2, #beige #bold, #beige ol li:before{
+    color: #ca9378;
+}
+#beige .button{
+    background-color: #ca9378;
+    border: #ca9378;
+}
+
+
+/*GRID*/
+.grid{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    padding-left: 15vw; /*hier rumspielen*/
+    padding-right: 15vw;
+}
+
+header{
+    background: black;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 15vw; /*hier rumspielen*/
+    padding-right: 15vw;
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    margin-bottom: -1rem;
+}
+footer #footerfont{
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+
+/*HEADER*/
+.headertop{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.headertop h2{
+    margin-bottom: 0;
+}
+
+.headerbottom{
+    display: flex;
+}
+
+.headerbottom a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 0.375rem 2rem;
+    text-decoration: none;
+    border: 0.125rem solid white;
+    border-radius: 20px;
+    margin-right: 1rem;
+}
+
+.headerbottom a:hover {
+    background-color: #df005e;
+    color: black;
+    border-color: #df005e;
+    position: relative;
+}
+  
+.headerbottom a.active {
+    background-color: #df005e;
+    color: black;
+    border-color: #df005e;
+    font-weight: 700;
+}
+  
+.headerbottom-right {
+    float: right;
+}
+  
+
+/*LANGUAGE SELECT*/
+.dropbtn {
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+  
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    color: #df005e;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown i{
+    color:#df005e;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: #df005e;}
+  
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+/*BUTTON*/
+.button {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 0.375rem 2rem;
+    text-decoration: none;
+    background-color: #df005e;
+    border: 0.125rem solid #df005e;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: white;
+    color: #df005e;
+    border-color: white;
+    position: relative;
+}
+
+ol{
+    list-style: display;
+    list-style-position: outside;
+    counter-reset: item;
+}
+ol li { 
+    display: block; 
+}
+ol li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+ul{
+    margin-bottom: 1rem;
+}
+
+i{
+    margin-right: 0.25rem;
+}
+
+.dropdown i{
+    margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 550px){
+    .grid{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 2fr;
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    header{
+        padding-left: 1rem; /*hier rumspielen*/
+        padding-right: 1rem;
+    }
+
+    .headerbottom a{
+        display: block;
+        width: 100%;
+        margin-right: 0rem;
+    }
+
+    .headerbottom a:first-of-type{
+        margin-right: 1rem;
+    }
+}

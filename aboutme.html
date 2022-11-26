@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="headergrid.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+		<title>About me</title>
+	</head>
+	<body id="pink">
+        <header>
+            <div class="headertop">
+                <h2>Tanmoy Roy</h2>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><i class="bi bi-globe dropbtn"></i>DE</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="aboutme_en.html">EN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="headerbottom">
+                <a href="index.html">Projects</a>
+                <a href="#aboutme" class="active">About me</a>
+            </div>
+        </header>
+        <div class="grid about">
+            <div id="image">
+                <img src="images/serious.png" alt="preview"/>
+                <img src="images/smile.png" class="img-top" alt="preview"/>
+            </div>
+            <section id="abouttext">
+                <h1>Vielseitiger Designer mit Fokus auf UX</h1>
+                <p>Ich heiße Tanmoy Roy, bin 23 Jahre alt und studiere zurzeit Kommunikationsdesign an der Hochschule Mannheim. Ich spezialisiere mich auf UX-Design und will später auch mal nach meinem Bachelor/Master in diesem Bereich tätig werden. Darüber hinaus zeichne, schreibe, verkaufe ich Comics und mache grafische Aufträge nebenbei. 
+                <a href="https://tanmoyux.github.io/comics/" target="_blank" rel="noopener noreferrer" id="bold">Hier ist meine andere Website, falls Sie meinen anderen Werken nachgehen wollen.</a></p>
+                <p>Was ich an UX so mag? Die Methodik dahinter. Methoden, Richtlinien, Psychologie und Feedback erlauben es, sein Design zu rechtfertigen und stellen sicher, das best optimierte Werk für den Nutzer zu kreieren.</p>
+                <p>Aus diesem Grund gehe ich so stark auf meinen Designprozess in meinen BIG UX Werken ein.</p>
+                </section>
+            <div id="contact">
+                <h2>Schreiben Sie mir:</h2>
+                <div>
+                    <button class="button" id="sample" href="#" onclick="CopyToClipboard('sample');return false;">
+                    <i class="bi bi-clipboard"></i>roytanmoy137@gmail.com</button>
+                </div>
+                <div>
+                    <a class="button" href="https://www.linkedin.com/in/tanmoy-roy-7bb7a1240/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> Linkedin</a>
+                </div>
+            </div>
+            <div id="skills">
+                <h2>Kompetenzen</h2>
+                <ul>
+					<li>UX, UI</li>
+					<li>Kunst, Grafik</li>
+					<li>Websites</li>
+					<li>Design</li>
+					<li>Animation</li>
+				</ul>
+            </div>
+            <div id="experience">
+                <h2>Erfahrung</h2>
+                <ul>
+					<li>Selbstständige Arbeit</li>
+					<li>Gruppenprojekte</li>
+					<li>Gruppenführung</li>
+					<li>Echte Kunden</li>
+					<li>Aufträge</li>
+				</ul>
+            </div>
+            <div id="knowledge1">
+                <h2>Sehr gutes Wissen</h2>
+                <ul>
+					<li>Figma</li>
+					<li>Adobe Photoshop</li>
+					<li>Adobe InDesign</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Microsoft Word</li>
+				</ul>
+            </div>
+            <div id="knowledge2">
+                <h2>Gutes Wissen</h2>
+                <ul>
+					<li>Adobe Illustrator</li>
+					<li>Miro</li>
+					<li>Adobe Premiere</li>
+					<li>Processing</li>
+					<li>Krita (Animation)</li>
+					<li>Microsoft Powerpoint</li>
+				</ul>
+            </div>
+            <div id="knowledge3">
+                <h2>Befriedigendes Wissen</h2>
+                <ul>
+                    <li>Adobe After Effects</li>
+					<li>Javascript</li>
+					<li>Blender</li>
+					<li>Youtrack, Jira, Toggl</li>
+					<li>Audacity</li>
+					<li>Microsoft Excel</li>
+				</ul>
+            </div>
+        </div>
+        <footer>
+            <p id="footerfont">©2022 Tanmoy Roy. All Rights Reserved.</p>
+        </footer>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="script.js"></script>
+	</body>
+</html>

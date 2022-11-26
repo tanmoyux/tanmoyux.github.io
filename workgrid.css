@@ -1,0 +1,351 @@
+/*
+1.) In grid-template areas: den Aufbau der Reihen bestimmen
+2.) Jede dieser Area in HTML als id benennen
+3.) Hier den ids die grid area zuteilen (auf richtige # und grid-area-namen achten
+4.) Richtige Ids für Farbe, grid geben
+5.) Links ändern
+
+Für jede neue Seite ein neues angepassten area aufbau
+Angepasste Farbschema
+*/
+
+.premake{
+    grid-template-areas:
+        "hl1 hl1 hl1"
+        "tn tn specs"
+        "sect1 sect1 ."
+        "hl2 hl2 hl2"
+        "sect2 sect2 ."
+        "sect3 sect3 ."
+        "sect4 sect4 ."
+        "pic1 pic1 ."
+        "sect5 sect5 ."
+        "pic2 pic3 pic3"
+        "pic4 pic5 pic5"
+        "sect6 sect6 ."
+        "sect7 sect7 ."
+        "hl3 hl3 hl3"
+        "sect8 sect8 ."
+        "sect9 sect9 .";
+}
+
+.mf{
+    grid-template-areas:
+        "hl1 hl1 hl1"
+        "tn tn specs"
+        "sect1 sect1 ."
+        "hl2 hl2 hl2"
+        "vid1 vid1 vid1"
+        "hl3 hl3 hl3"
+        "vid2 vid2 vid2"
+        "hl4 hl4 hl4"
+        "vid3 vid3 vid3"
+        "sect2 sect2 .";
+}
+
+.bms{
+    grid-template-areas:
+        "hl1 hl1 hl1"
+        "tn tn specs"
+        "sect1 sect1 ."
+        "sect2 sect2 ."
+        "hl2 hl2 hl2"
+        "sect3 sect3 ."
+        "pic1 pic2 pic3"
+        "sect4 sect4 ."
+        "pic4 pic4 ."
+        "sect5 sect5 ."
+        "pic5 pic5 ."
+        "sect6 sect6 ."
+        "pic6 pic6 ."
+        "sect7 sect7 ."
+        "pic7 pic7 pic7"
+        "sect8 sect8 ."
+        "hl3 hl3 hl3"
+        "vid1 vid1 vid1"
+        "sect9 sect9 .";
+}
+
+.das{
+    grid-template-areas: /*greift auf die unten definierten areas zu*/
+        "hl1 hl1 hl1"
+        "tn tn specs"
+        "sect1 sect1 ."
+        "sect2 sect2 ."
+        "hl2 hl2 hl2"
+        "sect3 sect3 ."
+        "pic1 pic2 pic3"
+        "sect4 sect4 ."
+        "sect5 sect5 ."
+        "pic4 pic4 pic4"
+        "sect6 sect6 ."
+        "pic5 pic5 pic5"
+        "sect7 sect7 ."
+        "pic6 pic6 pic6"
+        "hl3 hl3 hl3"
+        "vid1 vid1 vid1"
+        "pic7 pic7 ."
+        "sect8 sect8 .";
+}
+
+.dg{
+    grid-template-areas:
+        "hl1 hl1 hl1"
+        "tn tn specs"
+        "sect1 sect1 ."
+        "hl2 hl2 hl2"
+        "sect2 sect2 ."
+        "pic1 pic2 pic3"
+        "sect3 sect3 ."
+        "pic4 pic4 pic4"
+        "sect4 sect4 ."
+        "pic5 pic6 pic7"
+        "sect5 sect5 ."
+        "pic8 pic8 ."
+        "sect6 sect6 ."
+        "pic9 pic9 pic9"
+        "sect7 sect7 ."
+        "hl3 hl3 hl3"
+        "vid1 vid1 vid1"
+        "sect8 sect8 .";
+}
+
+#hl1{
+    grid-area: hl1;
+}
+#hl2{
+    grid-area: hl2;
+}
+#hl3{
+    grid-area: hl3;
+}
+#hl4{
+    grid-area: hl4;
+}
+#hl1, #hl2, #hl3, #hl4 {
+    margin-top: 2rem;
+}
+
+#tn{
+    grid-area: tn;
+}
+
+#specs{
+    grid-area: specs;
+}
+
+#vid1{
+    grid-area: vid1;
+}
+#vid2{
+    grid-area: vid2;
+}
+#vid3{
+    grid-area: vid3;
+}
+
+.video{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+    margin-bottom: 2rem;
+}
+
+.video iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#sect1{
+    grid-area: sect1;
+}
+#sect2{
+    grid-area: sect2;
+}
+#sect3{
+    grid-area: sect3;
+}
+#sect4{
+    grid-area: sect4;
+}
+#sect5{
+    grid-area: sect5;
+}
+#sect6{
+    grid-area: sect6;
+}
+#sect7{
+    grid-area: sect7;
+}
+#sect8{
+    grid-area: sect8;
+}
+#sect9{
+    grid-area: sect9;
+}
+
+#pic1{
+    grid-area: pic1;
+}
+#pic2{
+    grid-area: pic2;
+}
+#pic3{
+    grid-area: pic3;
+}
+#pic4{
+    grid-area: pic4;
+}
+#pic5{
+    grid-area: pic5;
+}
+#pic6{
+    grid-area: pic6;
+}
+#pic7{
+    grid-area: pic7;
+}
+#pic8{
+    grid-area: pic8;
+}
+#pic9{
+    grid-area: pic9;
+}
+
+#specs .button{
+    margin-top: 2rem;
+}
+
+img{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#tn, #pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7{
+    margin-bottom: 2rem;
+}
+
+
+@media only screen and (max-width: 550px){       
+    .premake{
+        grid-template-areas:
+            "hl1 hl1"
+            "tn tn"
+            "specs specs"
+            "sect1 sect1"
+            "hl2 hl2"
+            "sect2 sect2"
+            "sect3 sect3"
+            "sect4 sect4"
+            "pic1 pic1"
+            "sect5 sect5"
+            "pic2 pic2"
+            "pic3 pic3"
+            "pic4 pic4"
+            "pic5 pic5"
+            "sect6 sect6"
+            "sect7 sect7"
+            "hl3 hl3"
+            "sect8 sect8"
+            "sect9 sect9";
+    }
+    
+    .mf{
+        grid-template-areas:
+            "hl1 hl1"
+            "tn tn"
+            "specs specs"
+            "sect1 sect1"
+            "hl2 hl2"
+            "vid1 vid1"
+            "hl3 hl3"
+            "vid2 vid2"
+            "hl4 hl4"
+            "vid3 vid3"
+            "sect2 sect2";
+    }
+    
+    .bms{
+        grid-template-areas:
+            "hl1 hl1"
+            "tn tn"
+            "specs specs"
+            "sect1 sect1"
+            "sect2 sect2"
+            "hl2 hl2"
+            "sect3 sect3"
+            "pic1 pic1"
+            "pic2 pic2"
+            "pic3 pic3"
+            "sect4 sect4"
+            "pic4 pic4"
+            "sect5 sect5"
+            "pic5 pic5"
+            "sect6 sect6"
+            "pic6 pic6"
+            "sect7 sect7"
+            "pic7 pic7"
+            "sect8 sect8"
+            "hl3 hl3"
+            "vid1 vid1"
+            "sect9 sect9";
+    }
+
+    .das{
+        grid-template-areas: /*greift auf die unten definierten areas zu*/
+        "hl1 hl1"
+        "tn tn"
+        "specs specs"
+        "sect1 sect1"
+        "sect2 sect2"
+        "hl2 hl2"
+        "sect3 sect3"
+        "pic1 pic1"
+        "pic2 pic2"
+        "pic3 pic3"
+        "sect4 sect4"
+        "sect5 sect5"
+        "pic4 pic4"
+        "sect6 sect6"
+        "pic5 pic5"
+        "sect7 sect7"
+        "pic6 pic6"
+        "hl3 hl3"
+        "vid1 vid1"
+        "pic7 pic7"
+        "sect8 sect8";
+    }
+
+    .dg{
+        grid-template-areas:
+            "hl1 hl1"
+            "tn tn"
+            "specs specs"
+            "sect1 sect1"
+            "hl2 hl2"
+            "sect2 sect2"
+            "pic1 pic1"
+            "pic2 pic3"
+            "sect3 sect3"
+            "pic4 pic4"
+            "sect4 sect4"
+            "pic5 pic5"
+            "pic6 pic6"
+            "pic7 pic7"
+            "sect5 sect5"
+            "pic8 pic8"
+            "sect6 sect6"
+            "pic9 pic9"
+            "sect7 sect7"
+            "hl3 hl3"
+            "vid1 vid1"
+            "sect8 sect8";
+    }
+
+    .button:not(.premake .button){
+        display: none;
+    }
+}
