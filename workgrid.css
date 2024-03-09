@@ -9,6 +9,55 @@ Für jede neue Seite ein neues angepassten area aufbau
 Angepasste Farbschema
 */
 
+.kcw{
+    grid-template-areas:
+        "hl1 hl1 hl1"
+        "tn tn specs"
+        "sect1 sect1 ."
+        "sect2 sect2 ."
+        "sect3 sect3 ."
+        "hl2 hl2 hl2"
+        "sect4 sect4 ."
+        "sect5 sect5 ."
+        "pic1 pic2 pic3"
+        "sect6 sect6 ."
+        "pic4 pic4 pic5"
+        "sect7 sect7 ."
+        "pic6 pic6 pic6"
+        "sect8 sect8 ."
+        "pic7 pic7 pic8"
+        "sect9 sect9 ."
+        "pic9 pic9 ."
+        "pic10 pic10 ."
+        "pic11 pic11 ."
+        "sect10 sect10 ."
+        "pic12 pic13 ."
+        "sect11 sect11 ."
+        "pic14 pic14 ."
+        "hl3 hl3 hl3"
+        "vid1 vid1 vid1"
+        "sect12 sect12 .";
+}
+
+.pone{
+    grid-template-areas:
+        "hl1 hl1 hl1"
+        "tn tn specs"
+        "sect1 sect1 ."
+        "hl2 hl2 hl2"
+        "tn2 tn2 specs2"
+        "sect2 sect2 ."
+        "pic1 pic2 pic3"
+        "pic4 pic5 pic6"
+        "hl3 hl3 hl3"
+        "tn3 tn3 specs3"
+        "sect3 sect3 ."
+        "pic7 pic8 pic9"
+        "hl4 hl4 hl4"
+        "list1 list2 list3"
+        "sect4 sect4 .";
+}
+
 .premake{
     grid-template-areas:
         "hl1 hl1 hl1"
@@ -66,48 +115,29 @@ Angepasste Farbschema
         "sect9 sect9 .";
 }
 
-.das{
-    grid-template-areas: /*greift auf die unten definierten areas zu*/
-        "hl1 hl1 hl1"
-        "tn tn specs"
-        "sect1 sect1 ."
-        "sect2 sect2 ."
-        "hl2 hl2 hl2"
-        "sect3 sect3 ."
-        "pic1 pic2 pic3"
-        "sect4 sect4 ."
-        "sect5 sect5 ."
-        "pic4 pic4 pic4"
-        "sect6 sect6 ."
-        "pic5 pic5 pic5"
-        "sect7 sect7 ."
-        "pic6 pic6 pic6"
-        "hl3 hl3 hl3"
-        "vid1 vid1 vid1"
-        "pic7 pic7 ."
-        "sect8 sect8 .";
-}
-
-.dg{
+.ff{
     grid-template-areas:
         "hl1 hl1 hl1"
         "tn tn specs"
         "sect1 sect1 ."
+        "pic1 pic1 pic1"
         "hl2 hl2 hl2"
+        "tn2 tn2 specs2"
         "sect2 sect2 ."
-        "pic1 pic2 pic3"
-        "sect3 sect3 ."
-        "pic4 pic4 pic4"
-        "sect4 sect4 ."
-        "pic5 pic6 pic7"
-        "sect5 sect5 ."
-        "pic8 pic8 ."
-        "sect6 sect6 ."
-        "pic9 pic9 pic9"
-        "sect7 sect7 ."
-        "hl3 hl3 hl3"
-        "vid1 vid1 vid1"
-        "sect8 sect8 .";
+        "pic2 pic2 ."
+}
+
+.insights{
+    grid-template-areas:
+        "hl1 hl1 hl1"
+        "tn tn specs"
+        "sect1 sect1 ."
+        "pic1 pic1 pic1"
+        "pic2 pic2 pic2"
+        "pic3 pic4 pic5"
+        "pic6 pic6 pic6"
+        "pic7 pic7 pic7"
+        "pic8 pic8 pic8"
 }
 
 #hl1{
@@ -126,12 +156,40 @@ Angepasste Farbschema
     margin-top: 2rem;
 }
 
-#tn{
+#tn{ /*thumbnail*/
     grid-area: tn;
+}
+
+#tn2{
+    grid-area: tn2;
+}
+
+#tn3{
+    grid-area: tn3;
+}
+
+#list1{
+    grid-area: list1;
+}
+
+#list2{
+    grid-area: list2;
+}
+
+#list3{
+    grid-area: list3;
 }
 
 #specs{
     grid-area: specs;
+}
+
+#specs2{
+    grid-area: specs2;
+}
+
+#specs3{
+    grid-area: specs3;
 }
 
 #vid1{
@@ -187,6 +245,15 @@ Angepasste Farbschema
 #sect9{
     grid-area: sect9;
 }
+#sect10{
+    grid-area: sect10;
+}
+#sect11{
+    grid-area: sect11;
+}
+#sect12{
+    grid-area: sect12;
+}
 
 #pic1{
     grid-area: pic1;
@@ -215,8 +282,23 @@ Angepasste Farbschema
 #pic9{
     grid-area: pic9;
 }
+#pic10{
+    grid-area: pic10;
+}
+#pic11{
+    grid-area: pic11;
+}
+#pic12{
+    grid-area: pic12;
+}
+#pic13{
+    grid-area: pic13;
+}
+#pic14{
+    grid-area: pic14;
+}
 
-#specs .button{
+#specs .button, #specs2 .button, #specs3 .button{
     margin-top: 2rem;
 }
 
@@ -224,12 +306,77 @@ img{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-#tn, #pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7{
+#tn, #tn2, #tn3, #pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8, #pic9, #pic10, #pic11, #pic12, #pic13, #pic14{
     margin-bottom: 2rem;
 }
 
 
 @media only screen and (max-width: 550px){       
+    .kcw{
+        grid-template-areas:
+            "hl1 hl1"
+            "tn tn"
+            "specs specs"
+            "sect1 sect1"
+            "sect2 sect2"
+            "sect3 sect3"
+            "hl2 hl2"
+            "sect4 sect4"
+            "sect5 sect5"
+            "pic1 pic1"
+            "pic2 pic2"
+            "pic3 pic3"
+            "sect6 sect6"
+            "pic4 pic4"
+            "pic5 pic5"
+            "sect7 sect7"
+            "pic6 pic6"
+            "sect8 sect8"
+            "pic7 pic7"
+            "pic8 pic8"
+            "sect9 sect9"
+            "pic9 pic9"
+            "pic10 pic10"
+            "pic11 pic11"
+            "sect10 sect10"
+            "pic12 pic12"
+            "pic13 pic13"
+            "sect11 sect11"
+            "pic14 pic14"
+            "hl3 hl3"
+            "vid1 vid1"
+            "sect12 sect12";
+    }
+    
+    .pone{
+        grid-template-areas:
+            "hl1 hl1"
+            "tn tn"
+            "specs specs"
+            "sect1 sect1"
+            "hl2 hl2"
+            "tn2 tn2"
+            "specs2 specs2"
+            "sect2 sect2"
+            "pic1 pic1"
+            "pic2 pic2"
+            "pic3 pic3"
+            "pic4 pic4"
+            "pic5 pic5"
+            "pic6 pic6"
+            "hl3 hl3"
+            "tn3 tn3"
+            "specs3 specs3"
+            "sect3 sect3"
+            "pic7 pic7"
+            "pic8 pic8"
+            "pic9 pic9"
+            "hl4 hl4"
+            "list1 list2"
+            "list3 list3"
+            "sect4 sect4";
+    }
+
     .premake{
         grid-template-areas:
             "hl1 hl1"
@@ -294,58 +441,42 @@ img{
             "sect9 sect9";
     }
 
-    .das{
-        grid-template-areas: /*greift auf die unten definierten areas zu*/
-        "hl1 hl1"
-        "tn tn"
-        "specs specs"
-        "sect1 sect1"
-        "sect2 sect2"
-        "hl2 hl2"
-        "sect3 sect3"
-        "pic1 pic1"
-        "pic2 pic2"
-        "pic3 pic3"
-        "sect4 sect4"
-        "sect5 sect5"
-        "pic4 pic4"
-        "sect6 sect6"
-        "pic5 pic5"
-        "sect7 sect7"
-        "pic6 pic6"
-        "hl3 hl3"
-        "vid1 vid1"
-        "pic7 pic7"
-        "sect8 sect8";
-    }
-
-    .dg{
+    .ff{
         grid-template-areas:
             "hl1 hl1"
             "tn tn"
             "specs specs"
             "sect1 sect1"
-            "hl2 hl2"
-            "sect2 sect2"
             "pic1 pic1"
-            "pic2 pic3"
-            "sect3 sect3"
-            "pic4 pic4"
-            "sect4 sect4"
-            "pic5 pic5"
-            "pic6 pic6"
-            "pic7 pic7"
-            "sect5 sect5"
-            "pic8 pic8"
-            "sect6 sect6"
-            "pic9 pic9"
-            "sect7 sect7"
-            "hl3 hl3"
-            "vid1 vid1"
-            "sect8 sect8";
+            "hl2 hl2"
+            "tn2 tn2"
+            "specs2 specs2"
+            "sect2 sect2"
+            "pic2 pic2"
     }
 
-    .button:not(.premake .button){
+    .insights{
+        grid-template-areas:
+        "hl1 hl1"
+        "tn tn"
+        "specs specs"
+        "sect1 sect1"
+        "pic1 pic1"
+        "pic2 pic2"
+        "pic3 pic3"
+        "pic4 pic4"
+        "pic5 pic5"
+        "pic6 pic6"
+        "pic7 pic7"
+        "pic8 pic8"
+    }
+
+    .button:not(.premake .button, .kcw .button, .pone .button){ /*aktiviert mobile button*/
         display: none;
+    }
+
+    #specs .button, #specs2 .button{
+        margin-top: 0rem;
+        margin-bottom: 1rem;
     }
 }
