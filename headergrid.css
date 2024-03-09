@@ -1,16 +1,14 @@
 .projects{
     grid-template-areas: /*greift auf die unten definierten areas zu*/
         "hl1 hl1 hl1"
-        "premake mf bms"
-        "das dg ."
+        "kcw pone mf"
+        "bms . ."
         "hl2 hl2 hl2"
-        "insta kkg ."
+        "komma blender ff"
+        "insights . ."
         "hl3 hl3 hl3"
-        "blender insights typo"
-        "ps2 . ."
+        "premake bhs ."
         "hl4 hl4 hl4"
-        "game2 bhs ."
-        "hl5 hl5 hl5"
         "reel kc .";
 }
 
@@ -33,6 +31,14 @@
     margin-top: 2rem;
 }
 
+#kcw{
+    grid-area: kcw;
+}
+
+#pone{
+    grid-area: pone;
+}
+
 #premake{
     grid-area: premake;
 }
@@ -45,22 +51,6 @@
     grid-area: bms;
 }
 
-#das{
-    grid-area: das;
-}
-
-#dg{
-    grid-area: dg;
-}
-
-#insta{
-    grid-area: insta;
-}
-
-#kkg{
-    grid-area: kkg;
-}
-
 #blender{
     grid-area: blender;
 }
@@ -69,16 +59,12 @@
     grid-area: insights;
 }
 
-#typo{
-    grid-area: typo;
+#komma{
+    grid-area: komma;
 }
 
-#ps2{
-    grid-area: ps2;
-}
-
-#game2{
-    grid-area: game2;
+#ff{
+    grid-area: ff;
 }
 
 #bhs{
@@ -178,7 +164,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 98;
 }
 #image:hover .img-top {
     display: inline;
@@ -219,23 +205,19 @@
     .projects{
         grid-template-areas: /*greift auf die unten definierten areas zu*/
         "hl1 hl1"
-        "premake premake"
+        "kcw kcw"
+        "pone pone"
         "mf mf"
         "bms bms"
-        "das das"
-        "dg dg"
         "hl2 hl2"
-        "insta insta"
-        "kkg kkg"
-        "hl3 hl3"
+        "komma komma"
         "blender blender"
+        "ff ff"
         "insights insights"
-        "typo typo"
-        "ps2 ps2"
-        "hl4 hl4"
-        "game2 game2"
+        "hl3 hl3"
+        "premake premake"
         "bhs bhs"
-        "hl5 hl5"
+        "hl4 hl4"
         "reel reel"
         "kc kc";
     }
