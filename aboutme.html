@@ -1,44 +1,48 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 	<head>
 		<meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore the portfolio of Tanmoy Roy, a UX/UI designer and freelancer with expertise in creating user-centered, innovative digital experiences. Learn about his projects, skills, and methodologies focused on delivering optimized and impactful designs.">
+        <meta name="keywords" content="UX design, UI design, web development, graphic design, user experience, user interface, branding, illustration, responsive design, digital solutions, creative designer, portfolio, Tanmoy Roy">
+        <meta name="author" content="Tanmoy Roy">
+        <meta property="og:image" content="/images/smile.png">
 		<link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="headergrid.css">
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="projects-grid.css">
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 		<title>About me</title>
 	</head>
-	<body id="pink">
+	<body id="main">
         <header>
-            <div class="headertop">
-                <h2>Tanmoy Roy</h2>
-                <a href="aboutme_en.html" class="lang-switcher">
-                    <i class="bi bi-globe dropbtn"></i>DE
-                </a>
-            </div>
-            <div class="headerbottom">
-                <a href="index.html">Projects</a>
-                <a href="#aboutme" class="active">About me</a>
+            <div class="header-content">
+                <div class="headertop">
+                    <h2>Tanmoy Roy</h2>
+                    <p id="light"><img src="icons/stars.svg" alt="logo"/></p>
+                </div>
+                <div class="headerbottom">
+                    <a href="index.html">Projects</a>
+                    <a href="#aboutme" class="active">About me</a>
+                </div>
             </div>
         </header>
         <div class="grid about">
             <div id="image">
-                <img src="images/serious.png" alt="preview"/>
-                <img src="images/smile.png" class="img-top" alt="preview"/>
+                <img src="images/seriousbw.png" alt="preview"/>
+                <img src="images/smilebw.png" class="img-top" alt="preview"/>
             </div>
             <section id="abouttext">
-                <h1>Vielseitiger Designer mit Fokus auf UX</h1>
-                <p>Mein Name ist Tanmoy Roy, ich bin 24 Jahre alt und absolviere derzeit meinen Master in Kommunikationsdesign an der Hochschule Mannheim. Mein Schwerpunkt liegt im Bereich UX-Design, und mein Ziel ist es, nach meinem Master in diesem Bereich tätig zu werden. Neben meinem Studium zeichne, schreibe und verkaufe ich Comics und übernehme grafische Aufträge in meiner Freizeit.
-                <a href="https://tanmoyux.github.io/comics/" target="_blank" rel="noopener noreferrer" id="bold">Hier ist meine andere Website, falls Sie meinen anderen Werken nachgehen wollen.</a></p>
-                <p>Was ich an UX so mag? Die Methodik dahinter. Methoden, Richtlinien, Psychologie und Feedback erlauben es, sein Design zu rechtfertigen und stellen sicher, das best optimierte Werk für den Nutzer zu kreieren.</p>
-                <p>Aus diesem Grund gehe ich so stark auf meinen Designprozess in meinen UX-Werken ein.</p>
+                <h1>Versatile designer with focus on UX</h1>
+                <p>My name is Tanmoy Roy, a 25-year-old Master’s student in Communication Design at the University of Applied Sciences Mannheim. While my primary focus lies in UX design, I also have extensive experience in graphic design and illustration. Outside of my studies, I channel my creativity into drawing, writing, and selling comics, alongside taking on freelance projects.
+                <a href="https://tanmoyux.github.io/comics/" target="_blank" rel="noopener noreferrer" id="bold">Feel free to check out my (outdated) website for updates on my comic work.</a></p>
+                <p>What do I love the most about UX? The methodology behind it. Methods, guidelines, psychology and feedback will allow you to justify your design decisions and ensure the best optimized work for the user.</p>
+                <p>That’s why I describe my design process in my UX projects so much in depth.</p>
                 </section>
             <div id="contact">
-                <h2>Schreiben Sie mir:</h2>
+                <h2>Let’s connect:</h2>
                 <div>
-                    <button class="button" id="sample" href="#" onclick="CopyToClipboard('sample');return false;">
-                    <i class="bi bi-clipboard"></i>roytanmoy137@gmail.com</button>
+                    <a class="button" id="sample" href="#" onclick="CopyToClipboard('sample');return false;">
+                    <i class="bi bi-clipboard"></i>roytanmoy137@gmail.com</a>
                 </div>
                 <div>
                     <a class="button" href="https://www.linkedin.com/in/tanmoy-roy-7bb7a1240/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> Linkedin</a>
@@ -47,30 +51,31 @@
             <div id="skills">
                 <h2>Skills</h2>
                 <ul>
-					<li>UX- & UI-Design</li>
-                    <li>UX/Design-Analysen</li>
-					<li>Illustration, Grafik</li>
+					<li>UX & UI Design</li>
+                    <li>UX/Design Analysis</li>
+					<li>Illustration & Graphics</li>
 					<li>Websites</li>
-					<li>Design</li>
+					<li>Creative Leadership</li>
 					<li>Animation</li>
-                    <li>Branding, Corporate Identity</li>
-                    <li>Kampagnen</li>
+                    <li>Branding & Corporate Identity</li>
+                    <li>Campaigns</li>
+                    <li>Animation</li>
 				</ul>
             </div>
             <div id="experience">
-                <h2>Erfahrung</h2>
+                <h2>Experience</h2>
                 <ul>
-					<li>Agentur-/Firmenalltag</li>
-					<li>Selbstständige Projektführung</li>
-					<li>Projekte für Kunden</li>
-					<li>Private Aufträge</li>
-					<li>Pitches</li>
-                    <li>Conversion Rate optimiertes Design</li>
-                    <li>Windows/macOS</li>
+					<li>Worked in agenciese</li>
+					<li>Worked in a corporate setting</li>
+					<li>Collaborated with IT departments</li>
+					<li>Organized a vernissage</li>
+					<li>Delivered projects for real clients</li>
+                    <li>Participated in pitches</li>
+                    <li>Conversion Rate Optimized Design</li>
 				</ul>
             </div>
             <div id="knowledge1">
-                <h2>Sehr gutes Wissen</h2>
+                <h2>Great Knowledge</h2>
                 <ul>
 					<li>Figma</li>
 					<li>Adobe Photoshop</li>
@@ -80,17 +85,17 @@
 				</ul>
             </div>
             <div id="knowledge2">
-                <h2>Gutes Wissen</h2>
+                <h2>Good Knowledge</h2>
                 <ul>
 					<li>Adobe Illustrator</li>
 					<li>Adobe Premiere</li>
 					<li>HTML, CSS</li>
 					<li>AI-Tools/ChatGPT</li>
-					<li>Projektmanagement Tools</li>
+					<li>Project Management Tools</li>
 				</ul>
             </div>
             <div id="knowledge3">
-                <h2>Befriedigendes Wissen</h2>
+                <h2>Fundamental Knowledge</h2>
                 <ul>
                     <li>Adobe After Effects</li>
 					<li>Javascript</li>
@@ -102,8 +107,11 @@
             </div>
         </div>
         <footer>
-            <p id="footerfont">©2024 Tanmoy Roy. All Rights Reserved.</p>
-        </footer>
+            <div class="footer-content">
+                <p id="footerfont">©2024 Tanmoy Roy. All Rights Reserved.</p>
+                <a id="footerfont" href="imprint.html">Imprint</a>
+            </div>
+        <footer>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="script.js"></script>
 	</body>

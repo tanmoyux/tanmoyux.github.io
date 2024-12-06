@@ -8,6 +8,32 @@
 Für jede neue Seite ein neues angepassten area aufbau
 Angepasste Farbschema
 */
+.grid{
+    margin-bottom: 4rem;
+}
+
+.vlc{
+    grid-template-areas:
+        "hl1 hl1 hl1"
+        "tn tn specs"
+        "sect1 sect1 ."
+        "hl2 hl2 hl2"
+        "tn2 tn2 specs2"
+        "sect2 sect2 ."
+        "pic1 pic2 pic3"
+        "pic4 pic5 pic6"
+        "hl3 hl3 hl3"
+        "tn3 tn3 specs3"
+        "sect3 sect3 ."
+        "pic7 pic8 pic9"
+        "hl4 hl4 hl4"
+        "tn4 tn4 specs4"
+        "sect4 sect4 ."
+        "pic10 pic10 ."
+        "hl5 hl5 hl5"
+        "list1 list2 list3"
+        "sect5 sect5 .";
+}
 
 .kcw{
     grid-template-areas:
@@ -48,14 +74,18 @@ Angepasste Farbschema
         "tn2 tn2 specs2"
         "sect2 sect2 ."
         "pic1 pic2 pic3"
-        "pic4 pic5 pic6"
         "hl3 hl3 hl3"
         "tn3 tn3 specs3"
         "sect3 sect3 ."
+        "pic4 pic5 pic6"
         "pic7 pic8 pic9"
         "hl4 hl4 hl4"
+        "tn4 tn4 specs4"
+        "sect4 sect4 ."
+        "pic10 pic11 pic12"
+        "hl5 hl5 hl5"
         "list1 list2 list3"
-        "sect4 sect4 .";
+        "sect5 sect5 .";
 }
 
 .premake{
@@ -140,6 +170,20 @@ Angepasste Farbschema
         "pic8 pic8 pic8"
 }
 
+.k28{
+    grid-template-areas:
+        "hl1 hl1 hl1"
+        "tn tn specs"
+        "sect1 sect1 ."
+        "pic1 pic1 pic1"
+        "pic2 pic2 pic2"
+        "pic3 pic4 pic5"
+        "pic6 pic6 pic6"
+        "pic7 pic7 pic7"
+        "pic8 pic8 pic8"
+}
+
+
 #hl1{
     grid-area: hl1;
 }
@@ -152,7 +196,10 @@ Angepasste Farbschema
 #hl4{
     grid-area: hl4;
 }
-#hl1, #hl2, #hl3, #hl4 {
+#hl5{
+    grid-area: hl5;
+}
+#hl1, #hl2, #hl3, #hl4, #hl5 {
     margin-top: 2rem;
 }
 
@@ -166,6 +213,10 @@ Angepasste Farbschema
 
 #tn3{
     grid-area: tn3;
+}
+
+#tn4{
+    grid-area: tn4;
 }
 
 #list1{
@@ -190,6 +241,10 @@ Angepasste Farbschema
 
 #specs3{
     grid-area: specs3;
+}
+
+#specs4{
+    grid-area: specs4;
 }
 
 #vid1{
@@ -298,7 +353,7 @@ Angepasste Farbschema
     grid-area: pic14;
 }
 
-#specs .button, #specs2 .button, #specs3 .button{
+#specs .button, #specs2 .button, #specs3 .button, #specs4 .button{
     margin-top: 2rem;
 }
 
@@ -306,12 +361,47 @@ img{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-#tn, #tn2, #tn3, #pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8, #pic9, #pic10, #pic11, #pic12, #pic13, #pic14{
+#tn, #tn2, #tn3, #tn4, #pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8, #pic9, #pic10, #pic11, #pic12, #pic13, #pic14{
     margin-bottom: 2rem;
 }
 
 
 @media only screen and (max-width: 550px){       
+    
+    .vlc{
+        grid-template-areas:
+            "hl1 hl1"
+            "tn tn"
+            "specs specs"
+            "sect1 sect1"
+            "hl2 hl2"
+            "tn2 tn2"
+            "specs2 specs2"
+            "sect2 sect2"
+            "pic1 pic1"
+            "pic2 pic2"
+            "pic3 pic3"
+            "pic4 pic4"
+            "pic5 pic5"
+            "pic6 pic6"
+            "hl3 hl3"
+            "tn3 tn3"
+            "specs3 specs3"
+            "sect3 sect3"
+            "pic7 pic7"
+            "pic8 pic8"
+            "pic9 pic9"
+            "hl4 hl4"
+            "tn4 tn4"
+            "specs4 specs4"
+            "sect4 sect4"
+            "pic10 pic10"
+            "hl5 hl5"
+            "list1 list2"
+            "list3 list3"
+            "sect5 sect5";
+    }
+   
     .kcw{
         grid-template-areas:
             "hl1 hl1"
@@ -361,20 +451,27 @@ img{
             "pic1 pic1"
             "pic2 pic2"
             "pic3 pic3"
-            "pic4 pic4"
-            "pic5 pic5"
-            "pic6 pic6"
             "hl3 hl3"
             "tn3 tn3"
             "specs3 specs3"
             "sect3 sect3"
+            "pic4 pic4"
+            "pic5 pic5"
+            "pic6 pic6"
             "pic7 pic7"
             "pic8 pic8"
             "pic9 pic9"
             "hl4 hl4"
+            "tn4 tn4"
+            "specs4 specs4"
+            "sect4 sect4"
+            "pic10 pic10"
+            "pic11 pic11"
+            "pic12 pic12"
+            "hl5 hl5"
             "list1 list2"
             "list3 list3"
-            "sect4 sect4";
+            "sect5 sect5";
     }
 
     .premake{
@@ -471,11 +568,27 @@ img{
         "pic8 pic8"
     }
 
+    .k28{
+        grid-template-areas:
+            "hl1 hl1"
+            "tn tn"
+            "specs specs"
+            "sect1 sect1"
+            "pic1 pic1"
+            "pic2 pic2"
+            "pic3 pic3"
+            "pic4 pic4"
+            "pic5 pic5"
+            "pic6 pic6"
+            "pic7 pic7"
+            "pic8 pic8"
+    }
+
     .button:not(.premake .button, .kcw .button, .pone .button){ /*aktiviert mobile button*/
         display: none;
     }
 
-    #specs .button, #specs2 .button{
+    #specs .button, #specs2 .button, #specs3 .button{
         margin-top: 0rem;
         margin-bottom: 1rem;
     }

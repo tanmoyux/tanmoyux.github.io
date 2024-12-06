@@ -5,7 +5,6 @@
     padding: 0;
 }
 
-
 /*FONTS*/
 html{
     font-size: 16px;
@@ -20,7 +19,7 @@ h1{
     margin-bottom: 1rem;
 }
 
-h2, .lang-switcher{
+h2{
     font-family: 'Righteous', system-ui, cursive;
     font-size: 1.5rem;
 	line-height: 1.875rem;
@@ -47,94 +46,92 @@ h2, .lang-switcher{
 
 #footerfont{
     font-family: 'Kanit', system-ui, sans-serif;
-    font-size: 0.75rem;
-	line-height: 1rem;
+    font-size: 1rem;
+	line-height: 1.375rem;
     font-weight: 300;
+    margin-top: 1rem;
+    color: white;
 }
 
 /*COLORS*/
-#pink{
-    background-color: black;
-}
-#pink h1, #pink .grid h2, #pink ol li:before{ /*Wenn ich dann id=pink in den Body schreibe, wird es auf alles übernommen*/
-    color: #df005e;
-}
-#pink .grid{
-    color: white;
-}
-#pink #bold{
-    color: white;
+:root{
+    --main: #df005e;
+    --pink: #df005e;
+    --bluelight: #2B4DFF;
+    --black: #111111;
+    --white: #f0f0f0;
+    --green: #66E38D;
+    --grey: #595959;
+    --red: #d22637;
 }
 
-#pink .grid #bold{
-    color: #df005e;
+
+#main{
+    background-color: var(--black);
+}
+#main h1, .about h2, #main ol li:before{ /*Wenn ich dann id=main in den Body schreibe, wird es auf alles übernommen*/
+    color: var(--main);
+}
+#main .grid{
+    color: var(--white);
+}
+#main #bold{
+    color: var(--white);
 }
 
-#pink #bold:hover{
-    color: #df005e;
+#main .grid #bold{
+    color: var(--main);
 }
 
-#white{
-    background-color: black;
-}
-#white .grid{
-    color: white;
+#main #bold:hover{
+    color: var(--main);
 }
 
 .work{
-    background-color: white; 
+    background-color: var(--white); 
 }
 .work .grid{
-    color: black;
+    color: var(--black);
 }
-#pink2 .button:hover, #grey .button:hover, #blue .button:hover,  #blue2 .button:hover, #red .button:hover{
-    background-color: black;
-    color: white;
+#pink .button:hover, #grey .button:hover, #bluelight .button:hover, #red .button:hover{
+    background-color: var(--black);
+    color: var(--white);
 }
 
-#pink2 h1, #pink2 .grid h2, #pink2 #bold, #pink2 ol li:before{
-    color: #df005e;
+#pink h1, #pink .grid h2, #pink #bold, #pink ol li:before{
+    color: var(--pink);
 }
-#pink2 .button{
-    background-color: #df005e;
-    border: #df005e;
+#pink .button{
+    background-color: var(--pink);
+    border: var(--pink);
 }
 
 #green h1, #green .grid h2, #green #bold{
-    color: #66E38D;
+    color: var(--green);
 }
 
 #grey h1, #grey .grid h2, #grey #bold{
-    color: #595959;
+    color: var(--grey);
 }
 #grey .button{
-    background-color: #595959;
-    border: #595959;
+    background-color: var(--grey);
+    border: var(--grey);
 }
 
-#blue h1, #blue .grid h2, #blue #bold{
-    color: #233C57;
+#bluelight h1, #bluelight .grid h2, #bluelight #bold{
+    color: var(--bluelight);
 }
-#blue .button{
-    background-color: #233C57;
-    border: #233C57;
+#bluelight .button{
+    background-color: var(--bluelight);
+    border: var(--bluelight);
 }
-
-#blue2 h1, #blue2 .grid h2, #blue2 #bold{
-    color: #2B4DFF;
-}
-#blue2 .button{
-    background-color: #2B4DFF;
-    border: #2B4DFF;
-}
-
 
 #red h1, #red .grid h2, #red #bold{
-    color: #d22637;
+    color: var(--red);
 }
 #red .button{
-    background-color: #d22637;
-    border: #d22637;
+    background-color: var(--red);
+    border: var(--red);
 }
 
 
@@ -150,11 +147,12 @@ h2, .lang-switcher{
     margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-bottom: 4rem;
 }
 
 header{
-    background: black;
-    color: white;
+    background: var(--black);
+    color: var(--white);
     padding-top: 2rem;
     padding-bottom: 0.5rem;
     position: sticky;
@@ -162,27 +160,36 @@ header{
     z-index: 99;
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-bottom: 1rem;
 }
 
-header div{
+.header-content{
+    display: flex;
+    justify-content: space-between;
     max-width: 1280px; /*fixen*/
     width: auto;
     margin: 0 auto;
 }
 
 footer{
-    background: black;
-    color: white;
-    text-align: center;
-    margin-bottom: -1rem;
-}
-footer #footerfont{
-    padding: 1rem;
-    margin-top: 4rem;
+    background: var(--black);
+    color: var(--white);
+    padding-left: 2rem; /*hier rumspielen*/
+    padding-right: 2rem;
 }
 
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 100%;
+    max-width: 1280px;
+    width: auto;
+    margin: 0 auto;
+}
 
 /*HEADER*/
+
 .headertop{
     display: flex;
     justify-content: space-between;
@@ -191,6 +198,7 @@ footer #footerfont{
 
 .headertop h2{
     margin-bottom: 0;
+    margin-right: 1rem;
 }
 
 .headerbottom{
@@ -199,76 +207,63 @@ footer #footerfont{
 
 .headerbottom a {
     float: left;
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 0.375rem 2rem;
     text-decoration: none;
-    border: 0.125rem solid white;
+    border: 0.125rem solid var(--white);
     border-radius: 20px;
     margin-right: 1rem;
 }
 
 .headerbottom a:hover {
-    background-color: #df005e;
-    color: black;
-    border-color: #df005e;
+    background-color: var(--main);
+    color: var(--black);
+    border-color: var(--main);
     position: relative;
 }
   
 .headerbottom a.active {
-    background-color: #df005e;
-    color: black;
-    border-color: #df005e;
+    background-color: var(--main);
+    color: var(--black);
+    border-color: var(--main);
     font-weight: 700;
 }
   
 .headerbottom-right {
     float: right;
 }
-  
-/*LANGUAGE SELECT*/
-.lang-switcher {
-    color: white;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-}
-  
-/* Language Switcher on hover & focus */
-.lang-switcher:hover, .lang-switcher:focus {
-    color: #df005e;
-}
-
-.lang-switcher i{
-    color:#df005e;
-    margin-right: 0.5rem;
-}
-
 
 /*BUTTON*/
 .button {
     float: left;
-    color: white;
+    color: var(--white);
+    background-color: var(--main);
     text-align: center;
     padding: 0.375rem 2rem;
     text-decoration: none;
-    background-color: #df005e;
-    border: 0.125rem solid #df005e;
+    border: 0.125rem solid var(--main);
     border-radius: 10px;
 }
 
 .button:hover {
-    background-color: white;
-    color: #df005e;
-    border-color: white;
+    background-color: var(--white);
+    color: var(--main);
+    border-color: var(--white);
     position: relative;
 }
+
+
+#light:hover {
+    filter: drop-shadow(0 0 0.5rem rgb(255, 255, 255));
+  }
 
 ol{ /* Kommt im premake vor */
     list-style: display;
     list-style-position: outside;
     counter-reset: item;
 }
+
 ol li { 
     display: block; 
 }
@@ -295,6 +290,10 @@ p{
     max-width: 65ch; /* begrenzt die Laufweite vom Text, sieht aber kacke aus */
 }
 
+#metatext{
+    display: none;
+}
+
 @media only screen and (max-width: 550px){
     .grid{
         display: grid;
@@ -311,6 +310,11 @@ p{
         padding-right: 1rem;
     }
 
+    .header-content{
+        flex-direction: column;
+    }
+
+
     .headerbottom a{
         display: block;
         width: 100%;
@@ -319,6 +323,11 @@ p{
 
     .headerbottom a:first-of-type{
         margin-right: 1rem;
+    }
+
+    footer{
+        padding-left: 1rem; /*hier rumspielen*/
+        padding-right: 1rem;
     }
 
     #bhs{ /* Verbirgt bunnyhop auf mobile */
