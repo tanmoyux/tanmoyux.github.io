@@ -65,6 +65,8 @@ h2{
     --red: #d22637;
 }
 
+::-moz-selection { background: var(--main); color: var(--white); }
+::selection { background: var(--main); color: var(--white); }
 
 #main{
     background-color: var(--black);
