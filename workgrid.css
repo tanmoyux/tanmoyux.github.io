@@ -12,6 +12,13 @@ Angepasste Farbschema
     margin-bottom: 4rem;
 }
 
+.sap{
+    grid-template-areas:
+        "hl1 hl1 hl1"
+        "tn tn specs"
+        "sect1 sect1 ."
+}
+
 .vlc{
     grid-template-areas:
         "hl1 hl1 hl1"
@@ -368,6 +375,14 @@ img{
 
 @media only screen and (max-width: 550px){       
     
+    .sap{
+        grid-template-areas:
+            "hl1 hl1"
+            "tn tn"
+            "specs specs"
+            "sect1 sect1"
+    }
+
     .vlc{
         grid-template-areas:
             "hl1 hl1"

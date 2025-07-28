@@ -1,8 +1,8 @@
 .projects{
     grid-template-areas: /*greift auf die unten definierten areas zu*/
         "hl1 hl1 hl1"
-        "vlc kcw pone"
-        "mf bms ."
+        "worning sap vlc"
+        "kcw pone mf"
         "hl2 hl2 hl2"
         "k28 blender ff"
         "insights . ."
@@ -35,6 +35,14 @@
     grid-area: sect1;
 }
 
+#worning{
+    grid-area: worning;
+}
+
+#sap{
+    grid-area: sap;
+}
+
 #vlc{
     grid-area: vlc;
 }
@@ -53,10 +61,6 @@
 
 #mf{
     grid-area: mf;
-}
-
-#bms{
-    grid-area: bms;
 }
 
 #blender{
@@ -221,6 +225,8 @@
     .projects{
         grid-template-areas: /*greift auf die unten definierten areas zu*/
         "hl1 hl1"
+        "worning worning"
+        "sap sap"
         "vlc vlc"
         "kcw kcw"
         "pone pone"
