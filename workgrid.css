@@ -17,6 +17,10 @@ Angepasste Farbschema
         "hl1 hl1 hl1"
         "tn tn specs"
         "sect1 sect1 ."
+        "hl2 hl2 hl2"
+        "tn2 tn2 specs2"
+        "sect2 sect2 ."
+        "sect3 sect3 ."
 }
 
 .vlc{
@@ -381,6 +385,11 @@ img{
             "tn tn"
             "specs specs"
             "sect1 sect1"
+            "hl2 hl2"
+            "tn2 tn2"
+            "specs2 specs2"
+            "sect2 sect2"
+            "sect3 sect3"
     }
 
     .vlc{
@@ -599,7 +608,7 @@ img{
             "pic8 pic8"
     }
 
-    .button:not(.premake .button, .kcw .button, .pone .button){ /*aktiviert mobile button*/
+    .button:not(.premake .button, .kcw .button, .pone .button, .sap .button){ /*aktiviert mobile button*/
         display: none;
     }
 
