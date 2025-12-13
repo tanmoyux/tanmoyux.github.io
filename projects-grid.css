@@ -1,15 +1,11 @@
 .projects{
     grid-template-areas: /*greift auf die unten definierten areas zu*/
         "hl1 hl1 hl1"
-        "worning sap vlc"
-        "kcw pone mf"
+        "sap vlc pone"
+        "mf . ."
         "hl2 hl2 hl2"
-        "k28 blender ff"
-        "insights . ."
-        "hl3 hl3 hl3"
-        "premake bhs ."
-        "hl4 hl4 hl4"
-        "reel kc .";
+        "worning kcw k28"
+        "ff insights bhs";
 }
 
 #hl1{

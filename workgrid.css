@@ -1,5 +1,5 @@
 /*
-1.) In grid-template areas: den Aufbau der Reihen bestimmen
+1.) In der "grid-template-areas" des Projekts: den Aufbau der Reihen bestimmen (mobile nicht vergessen)
 2.) Jede dieser Area in HTML als id benennen
 3.) Hier den ids die grid area zuteilen (auf richtige # und grid-area-namen achten
 4.) Richtige Ids für Farbe, grid geben
@@ -12,6 +12,52 @@ Angepasste Farbschema
     margin-bottom: 4rem;
 }
 
+.worning{
+    grid-template-areas:
+        "hl1 hl1 hl1"
+        "tn tn specs"
+        "sect1 sect1 ."
+        "sect2 sect2 ."
+        "sect3 sect3 ."
+        "hl2 hl2 hl2"
+        "sect4 sect4 ."
+        "sect5 sect5 ."
+        "pic1 pic1 pic1"
+        "sect6 sect6 ."
+        "pic2 pic2 pic2"
+        "sect7 sect7 ."
+        "pic3 pic4 pic5"
+        "sect8 sect8 ."
+        "hl3 hl3 hl3"
+        "sect9 sect9 ."
+        "pic6 pic6 pic7"
+        "sect10 sect10 ."
+        "pic8 pic9 pic10"
+        "sect11 sect11 ."
+        "pic11 pic11 ."
+        "sect12 sect12 ."
+        "pic12 pic12 ."
+        "sect13 sect13 ."
+        "hl4 hl4 hl4"
+        "sect14 sect14 ."
+        "pic13 pic14 pic15"
+        "sect15 sect15 ."
+        "pic16 pic16 ."
+        "sect16 sect16 ."
+        "pic17 pic17 pic17"
+        "sect17 sect17 ."
+        "pic18 pic18 pic18"
+        "sect18 sect18 ."
+        "pic19 pic20 pic21"
+        "sect19 sect19 ."
+        "pic22 pic22 pic22"
+        "sect20 sect20 ."
+        "pic23 pic24 pic25"
+        "hl5 hl5 hl5"
+        "sect21 sect22 ."
+        "sect23 sect23 .";
+}
+
 .sap{
     grid-template-areas:
         "hl1 hl1 hl1"
@@ -20,7 +66,13 @@ Angepasste Farbschema
         "hl2 hl2 hl2"
         "tn2 tn2 specs2"
         "sect2 sect2 ."
+        "hl3 hl3 hl3"
+        "tn3 tn3 specs3"
         "sect3 sect3 ."
+        "hl4 hl4 hl4"
+        "tn4 tn4 specs4"
+        "sect4 sect4 ."
+        "sect5 sect5 .";
 }
 
 .vlc{
@@ -320,6 +372,39 @@ Angepasste Farbschema
 #sect12{
     grid-area: sect12;
 }
+#sect13{
+    grid-area: sect13;
+}
+#sect14{
+    grid-area: sect14;
+}
+#sect15{
+    grid-area: sect15;
+}
+#sect16{
+    grid-area: sect16;
+}
+#sect17{
+    grid-area: sect17;
+}
+#sect18{
+    grid-area: sect18;
+}
+#sect19{
+    grid-area: sect19;
+}
+#sect20{
+    grid-area: sect20;
+}
+#sect21{
+    grid-area: sect21;
+}
+#sect22{
+    grid-area: sect22;
+}
+#sect23{
+    grid-area: sect23;
+}
 
 #pic1{
     grid-area: pic1;
@@ -363,6 +448,40 @@ Angepasste Farbschema
 #pic14{
     grid-area: pic14;
 }
+#pic15{
+    grid-area: pic15;
+}
+#pic16{
+    grid-area: pic16;
+}
+#pic17{
+    grid-area: pic17;
+}
+#pic18{
+    grid-area: pic18;
+}
+#pic19{
+    grid-area: pic19;
+}
+#pic20{
+    grid-area: pic20;
+}
+#pic21{
+    grid-area: pic21;
+}
+#pic22{
+    grid-area: pic22;
+}
+#pic23{
+    grid-area: pic23;
+}
+#pic24{
+    grid-area: pic24;
+}
+#pic25{
+    grid-area: pic25;
+}
+
 
 #specs .button, #specs2 .button, #specs3 .button, #specs4 .button{
     margin-top: 2rem;
@@ -372,13 +491,71 @@ img{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-#tn, #tn2, #tn3, #tn4, #pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8, #pic9, #pic10, #pic11, #pic12, #pic13, #pic14{
+#tn, #tn2, #tn3, #tn4, #pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8, #pic9, #pic10, #pic11, #pic12, #pic13, #pic14, #pic15, #pic16, #pic17, #pic18, #pic19, #pic20, #pic21, #pic22, #pic23, #pic24, #pic25{
     margin-bottom: 2rem;
 }
 
 
 @media only screen and (max-width: 550px){       
-    
+
+    .worning{
+    grid-template-areas:
+        "hl1 hl1"
+        "tn tn"
+        "specs specs"
+        "sect1 sect1"
+        "sect2 sect2"
+        "sect3 sect3"
+        "hl2 hl2"
+        "sect4 sect4"
+        "sect5 sect5"
+        "pic1 pic1"
+        "sect6 sect6"
+        "pic2 pic2"
+        "sect7 sect7"
+        "pic3 pic3"
+        "pic4 pic4"
+        "pic5 pic5"
+        "sect8 sect8"
+        "hl3 hl3"
+        "sect9 sect9"
+        "pic6 pic6"
+        "pic7 pic7"
+        "sect10 sect10"
+        "pic8 pic8"
+        "pic9 pic9"
+        "pic10 pic10"
+        "sect11 sect11"
+        "pic11 pic11"
+        "sect12 sect12"
+        "pic12 pic12"
+        "sect13 sect13"
+        "hl4 hl4"
+        "sect14 sect14"
+        "pic13 pic13"
+        "pic14 pic14"
+        "pic15 pic15"
+        "sect15 sect15"
+        "pic16 pic16"
+        "sect16 sect16"
+        "pic17 pic17"
+        "sect17 sect17"
+        "pic18 pic18"
+        "sect18 sect18"
+        "pic19 pic19"
+        "pic20 pic20"
+        "pic21 pic21"
+        "sect19 sect19"
+        "pic22 pic22"
+        "sect20 sect20"
+        "pic23 pic23"
+        "pic24 pic24"
+        "pic25 pic25"
+        "hl5 hl5"
+        "sect21 sect22"
+        "sect23 sect23";
+    }
+
     .sap{
         grid-template-areas:
             "hl1 hl1"
@@ -389,7 +566,15 @@ img{
             "tn2 tn2"
             "specs2 specs2"
             "sect2 sect2"
+            "hl3 hl3"
+            "tn3 tn3"
+            "specs3 specs3"
             "sect3 sect3"
+            "hl4 hl4"
+            "tn4 tn4"
+            "specs4 specs4"
+            "sect4 sect4"
+            "sect5 sect5"
     }
 
     .vlc{
@@ -608,7 +793,7 @@ img{
             "pic8 pic8"
     }
 
-    .button:not(.premake .button, .kcw .button, .pone .button, .sap .button){ /*aktiviert mobile button*/
+    .button:not(.premake .button, .kcw .button, .pone .button, .sap .button, .worning .button){ /*aktiviert mobile button*/
         display: none;
     }
 
