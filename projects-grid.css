@@ -5,7 +5,8 @@
         "mf . ."
         "hl2 hl2 hl2"
         "worning kcw k28"
-        "ff insights bhs";
+        "wp ff insights"
+        "bhs . .";
 }
 
 #hl1{
@@ -29,6 +30,10 @@
 
 #sect1{
     grid-area: sect1;
+}
+
+#wp{
+    grid-area: wp;
 }
 
 #worning{
@@ -229,6 +234,7 @@
         "worning worning"
         "kcw kcw"
         "k28 k28"
+        "wp wp"
         "ff ff"
         "insights insights"
         "bhs bhs";

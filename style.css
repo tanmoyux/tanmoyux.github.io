@@ -333,7 +333,7 @@ p{
         padding-right: 1rem;
     }
 
-    #bhs{ /* Verbirgt bunnyhop auf mobile */
+    #bhs, #wp{ /* Verbirgt bunnyhop auf mobile */
         display: none;
     }
 }
