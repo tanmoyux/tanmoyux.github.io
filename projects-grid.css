@@ -154,8 +154,7 @@
 .about{
     grid-template-areas: /*greift auf die unten definierten areas zu*/
         "image abouttext abouttext"
-        "contact skills experience"
-        "knowledge1 knowledge2 knowledge3";
+        "contact skills experience";
 }
 
 .about > * {
@@ -267,10 +266,8 @@
             "image image"
             "abouttext abouttext"
             "contact contact" 
-            "skills experience"
-            "knowledge1 knowledge1" 
-            "knowledge2 knowledge2"
-            "knowledge3 knowledge3";
+            "skills skills" 
+            "experience experience";
     }
 
     .imprint{
